@@ -19,7 +19,7 @@ DOCS_FOLDER = "documents"
 
 # Mistral API details
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
-MISTRAL_API_KEY = "94DfmNYxZqPVRZct7Ksjao7Tj2lvjA8P"  # Or use an environment variable
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")  # Or use an environment variable
 
 
 @app.post("/upload")
